@@ -53,6 +53,10 @@ And let me tell you, error messages are AWESOME! That may sound crazy, but they 
 
 ^^^ **Imposter syndrome!** Totally normal, you're not alone, and you ARE capable of anything!
 
+###### Labs:
+- Hello world
+- Reading error messages
+
 
 _____
 
@@ -83,7 +87,7 @@ my_string = "This is a string"
 another_string = 'This is also a string' 
 ```
 
-<img src="pics/hello-world.png" style="max-height:250px"/>
+<img src="pics/hello-world-.png" style="max-height:150px"/>
 
 
 ##### Integer
@@ -108,6 +112,8 @@ likes_cheese = true
 has_cheese = false
 ```
 
+____
+
 ##### Array
 An array is a data structure meaning it is a structure that holds data! An array is a collection of data.
 
@@ -115,6 +121,11 @@ An analogy - You can think of an array as a row of boxes! Each box contains one 
 
 <img src="pics/boxes.gif" style="max-height:250px"/>
 
+
+###### Labs:
+- Variables, types, and methods labs
+
+_____
 
 ## Arrays & Array Methods
 
@@ -155,6 +166,10 @@ Tasks:
 BONUS:
 - [ ] make a clone of an array
     - `clone`
+
+###### Labs:
+- Arrays Labs
+
 ____
 
 ## Logic & Conditionals
@@ -197,6 +212,9 @@ Tasks:
     - `==`
     - `!=`
 - [ ] demonstrate `||` and `&&`
+
+###### Labs:
+- Conditionals Labs
 
 ____
 
