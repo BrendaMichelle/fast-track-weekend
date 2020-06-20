@@ -159,9 +159,9 @@ Tasks:
         - `<<`
 - [ ] delete from the array
     - [ ] from the *beginning* of the array
-        - `pop`
-    - [ ] from the *end* of the array
         - `shift`
+    - [ ] from the *end* of the array
+        - `pop`
 
 BONUS:
 - [ ] make a clone of an array
