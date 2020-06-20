@@ -30,7 +30,7 @@ We will be getting into Ruby and handling error messages that come up as we prog
 
 We will be reviewing Day 1 topics. Then we will proceed to cover looping and iterating in Ruby. 💯
 
-<img src="pics/gprs.jpg" style="max-height:150px"/>
+<img src="pics/gprs.jpg" style="max-height:100px"/>
 
 ______
 
