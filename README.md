@@ -370,9 +370,8 @@ ______
 ###### Students will be able to:
 
 1. Use each to work with every element in an array
-2. Decide whether to use each instead of another looping construct in a particular situation
-3. Operate on an array using the sort, reverse, and include methods
-4. Recognize other ruby array methods
+2. Operate on an array using the `sort`, `reverse`, and `include?` methods
+3. Recognize other ruby array methods
 
 
 <img src="pics/boxes.gif" style="max-height:250px"/>
