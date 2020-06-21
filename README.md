@@ -355,7 +355,7 @@ count.times do |i|
 end
 ```
 
-Runy has lots of other ways to loop - `loop`, `until`, `for`, etc! Don't worry about memorizing all of them. Just focus on solving problems using the loops that you know and on the logic behind looping. The logic will basically be the same for any of the different ways of looping.
+Ruby has lots of other ways to loop - `loop`, `until`, `for`, etc! Don't worry about memorizing all of them. Just focus on solving problems using the loops that you know and on the logic behind looping. The logic will basically be the same for any of the different ways of looping.
 
 
 ###### Labs
