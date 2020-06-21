@@ -233,6 +233,9 @@ ______
 # 📚 DAY 2 📚
 ______
 
+
+<img src="pics/welcome-back.jpg" style="max-height:300px">
+
 ## Review
 
 1. Create a method greeter that accepts a name as an argument and prints a greeting of your choice to that name. For instance, if you invoke `greeter('Sylwia')`, it should put "Hey, how's it going Sylwia?"
