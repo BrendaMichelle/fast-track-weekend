@@ -532,3 +532,11 @@ famous_cats.size
 
 - [Ruby Array Exercises](https://github.com/learn-co-curriculum/ruby-array-exercises) - not in the curriculum, bonus array practice lab
 - Tic Tac Toe Current Player
+
+
+___
+
+
+🙌 DAY 2 🙌
+
+<img src="pics/dog-ducks.jpg" style="max-height:500px">
