@@ -34,6 +34,9 @@ We will be reviewing Day 1 topics. Then we will proceed to cover looping and ite
 
 ______
 
+# 📚 DAY 1 📚
+______
+
 ## Intro to Ruby & Error Messages
 
 Ruby programs are basically composed of 3 things:
@@ -221,3 +224,311 @@ ____
 🙌 DAY 1 🙌
 
 <img src="pics/flowers.jpg" style="max-height:250px"/>
+
+
+
+
+______
+
+# 📚 DAY 2 📚
+______
+
+## Review
+
+1. Create a method greeter that accepts a name as an argument and prints a greeting of your choice to that name. For instance, if you invoke `greeter('Sylwia')`, it should put "Hey, how's it going Sylwia?"
+
+2. Create a method called `fizzbuzz` that will accept a number as an argument. If the number is evenly divisible by 3 AND 5, it should output "FIZZBUZZ". If the number is only evenly divisible by 3, then it should output "Fizz". If it's only evenly divisible by 5, then it should output "Buzz".
+
+3. Create a method called `potato_family?` that takes an array and index (number) as arguments. If the element at the specified position is a potato, yam or sweet potato, it will output, "yes, this belongs to the potato family". Otherwise, it will output "nope, definitely not related to a potato". 
+
+```Ruby
+plants = ["potato", "pear", "apple", "yams", "sweet potato"]
+```
+
+
+
+## Looping
+
+###### Students will be able to:
+
+1. Write a loop using times
+2. Write a loop using while
+3. Use the break keyword
+4. Understand the idea of a counter
+5. Break out of a loop based on a counter
+
+
+Sometimes, we want need to repeat certain operations various times. Perhaps, we wanted to print out "Hello, world" ten times. Sure, we could write the following code to do that:
+
+```Ruby
+puts "Hello, world"
+puts "Hello, world"
+puts "Hello, world"
+puts "Hello, world"
+puts "Hello, world"
+puts "Hello, world"
+puts "Hello, world"
+puts "Hello, world"
+puts "Hello, world"
+puts "Hello, world"
+```
+##### Times
+
+But this is SO repetitive, isn't it?! Thankfully, there's a better way! We can use this concept in programming called loops!
+
+```Ruby
+10.times do
+    puts "Hello, world"
+end
+```
+
+In the looping example above, we used a method called `times` that lets us run code some number of times.
+
+In three lines of code, we managed to do what we were originally trying to accomplish with 10 lines of repetitive code. What an upgrade.
+
+If we need to know which step of the loop we're in, we can use `||` almost like a method definition. For example:
+
+```Ruby
+multiples_of_two = []
+10.times do |num|
+  multiples_of_two << num * 2
+end
+puts multiples_of_two
+```
+
+###### Challenges With Loops:
+
+1. Print out the numbers 1 - 100
+2. Print out only the even number from 1 - 100
+3. Print out the numbers 1-100, but for every number divisible by 3, print "Fizz"
+4. Same as before, but for numbers divisible by 5, print "Buzz"
+5. Same as before, but for numbers divisible by both 3 and 5, print "FizzBuzz"
+6. Add the numbers 1-100 to an array
+
+<img src="pics/loop-meme.png" style="max-width:300px"/>
+
+##### While
+
+A `while` loop will keep executing a block of code as long as a specific condition is true.
+
+```Ruby
+counter = 0
+while counter < 20
+  puts "The current number is less than 20."
+  counter += 1
+end
+```
+
+In programming, it's best practice to try to reuse code! Reusing code helps us improve our code's logic, allows us to tackle larger problems, and allows us to make our code cleaner!
+
+Let's say we ćanted to write a program to greet people. So perhaps we have something like this:
+
+```Ruby
+puts "Hello, Michelle."
+puts "Hello, Andrew."
+puts "Hello, Sylwia."
+puts "Hello, Tim."
+puts "Hello, Eli."
+puts "Hello, Maria."
+puts "Hello, Sedona."
+puts "Hello, Jay."
+```
+
+So much repeitition. What's being repeated here? - the `puts` and `"Hello, "`, right? So let's abstract this into reusable code into a method.
+
+```Ruby
+def greet_user(name)
+    puts "Hello, #{name}."
+end
+```
+
+Alright! So now with looping, we can abstract away the actual mechanic of enacting the same or similar code a certain number of times. So to complete our program, we can write the following:
+
+```Ruby
+users = ["Michelle", "Andrew", "Sylwia", "Tim", "Eli", "Maria", "Sedona", "Jay"]
+count = users.length
+count.times do |i|
+  greet_user(users[i])
+end
+```
+
+Runy has lots of other ways to loop - `loop`, `until`, `for`, etc! Don't worry about memorizing all of them. Just focus on solving problems using the loops that you know and on the logic behind looping. The logic will basically be the same for any of the different ways of looping.
+
+
+###### Labs
+- While and Until Loops Lab
+- Tic Tac Toe Turn
+- Tic Tac Toe Play Loop
+
+______
+
+## Iteration
+
+###### Students will be able to:
+
+1. Use each to work with every element in an array
+2. Decide whether to use each instead of another looping construct in a particular situation
+3. Operate on an array using the sort, reverse, and include methods
+4. Recognize other ruby array methods
+
+
+<img src="pics/boxes.gif" style="max-height:250px"/>
+
+
+##### Getting Each Item in an Array
+
+The most common loop that we'll find ourselves doing is looping over the values in an array. We've learned various ways of looping and we could certainly write the logic to loop over an array with `times` or `while`! Examples:
+
+Using `while`:
+``` Ruby    
+def greet_user(user)
+  puts "Hello, #{user}"
+end
+
+users = ["Joe", "Rob", "Sedona", "Michelle"]
+i = 0
+while i < user.length
+  greet_user(users[i])
+  i += 1
+end
+```
+
+Using `times`:
+```Ruby
+users = ["Joe", "Rob", "Sedona", "Michelle"]
+count = users.length
+count.times do |i|
+  greet_user(users[i])
+end
+```
+
+These two ways do the trick! However, there's a more common way to loop over an array in Ruby...
+
+##### Iterating with `.each`
+
+We can use an array method called `each`! 
+
+```Ruby
+users = ["Joe", "Rob", "Sedona", "Michelle"]
+users.each do |user|
+  greet_user(users[user])
+end
+```
+
+###### Challenges with `each`
+
+1. Print the sum of all the numbers in an array
+2. Print the sum of just the even numbers in an array
+3. Print a welcome message for each user in an array
+
+
+##### Array of Arrays!
+
+We've seen how arrays can hold any kind of value from strings to numbers! Did you know arrays can even hold other arrays!?
+
+It can be difficult to imagine this. Going on the analogies we talked about yesterday, we can think of an array of arrays in one of the following ways:
+
+- a list of lists
+- a row of boxes where each box contains another row of boxes
+- a set within a set
+
+
+<img src="pics/two_dimensional_arrays.jpg">
+<br>
+<br>
+<br>
+<br>
+
+<details>
+<summary>How would we iterate through an array inside of another array?</summary>
+<br>
+Nested Loops!
+<br><br>
+<pre>
+
+```Ruby
+arrays_of_numbers = [[1,2,3], [4,5,6], [7,8,9]]
+arrays_of_numbers.each do |array|
+  puts "about to iterate through #{array}"
+  array.each do |num|
+    puts "#{num}"
+  end
+  puts "finished iterating through #{array}"
+end
+```
+</pre>
+</details>
+
+<br>
+<br>
+Why would we ever want to use nested arrays? Some use cases include:
+
+- Perhaps we're writing an Amazon like program and we have three wishlists and we want to store each wishlist in an array called `wishlists`. For example:
+
+```Ruby
+my_wishlists = [["toothpaste", "hairbrush", "bathroom rug"], ["notebook", "pencils", "pen"], ["lamp", "blanket", "giftcard"]]
+
+# my_wishlists[0] => ["toothpaste", "hairbrush", "bathroom rug"]
+# my_wishlists[1] => ["notebook", "pencils", "pen"]
+# my_wishlists[2] => ["lamp", "blanket", "giftcard"]
+```
+- Many games like chess or checkers, for example, require boards and we can use nested arrays to represent a board in our program
+- You may wish to create a grid
+
+```Ruby
+grid = [
+    [3, 54, 1,  4,  56, 1,  56],
+    [5, 61, 5,  1,  5,  15, 9],
+    [7,  9, 6,  0,  2,  5,  6], 
+    [12, 1, 1,  18, 31, 4,  8], 
+    [87, 8, 7,  90, 28, 21, 30], 
+    [39, 4, 15,  4, 30, 19, 60], 
+]
+
+grid.each do |row|
+  sum = 0
+  row.each do |num|
+    sum += num
+  end
+  puts "the sum from the row was #{sum}"
+end
+```
+
+
+##### Other Iterators
+
+Ruby has lots of other methods like `each` that work with all of the values in an array. You don't need to memorize all of them, but it's worthwhile to explore them and become aware of what sort of array methods are already available for us to use! A small sample:
+
+- `select`, `find`, `collect` (`map`)
+- `include?`, `all?`, `none?`, `any?`
+- `sort`, `min`, `max`, `reverse`, `first`, `last`
+
+Some examples:
+
+`sort` method
+``` Ruby
+famous_cats = ["lil' bub", "grumpy cat", "maru"]
+famous_cats.sort
+    #  => ["grumpy cat", "lil' bub", "maru"]
+```
+
+`include?` method
+```Ruby
+famous_cats = ["lil' bub", "grumpy cat", "Maru"]
+famous_cats.include?("Garfield")
+    # => false
+famous_cats.include?("Maru")
+    # => true
+```
+
+`size` method
+```Ruby
+famous_cats = ["lil' bub", "grumpy cat", "Maru"]
+famous_cats.size
+    # => 3
+```
+
+###### Labs
+
+- [Ruby Array Exercises](https://github.com/learn-co-curriculum/ruby-array-exercises) - not in the curriculum, bonus array practice lab
+- Tic Tac Toe Current Player
