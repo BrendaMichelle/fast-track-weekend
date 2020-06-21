@@ -324,7 +324,7 @@ end
 
 In programming, it's best practice to try to reuse code! Reusing code helps us improve our code's logic, allows us to tackle larger problems, and allows us to make our code cleaner!
 
-Let's say we ćanted to write a program to greet people. So perhaps we have something like this:
+Let's say we wanted to write a program to greet people. So perhaps we have something like this:
 
 ```Ruby
 puts "Hello, Michelle."
