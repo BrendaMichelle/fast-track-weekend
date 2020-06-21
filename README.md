@@ -234,7 +234,7 @@ ______
 ______
 
 
-<img src="pics/welcome-back.jpg" style="max-height:300px">
+<img src="pics/welcome-back.jpg" style="max-width:300px">
 
 ## Review
 
