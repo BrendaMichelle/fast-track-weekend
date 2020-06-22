@@ -9,7 +9,8 @@
     - Mute yourself, camera on
     - Personal Empowerment Plan 
         - read, google, peer, then instructors
-    - Feel free to speak up/ask questions in the zoom chat or in the slack channel
+    - Ask questions in the zoom chat or in the slack channel
+        - When the instructor asks for questions, feel free to unmute yourself & ask aloud
 - [ ] intros
     - [ ] name, pronouns
     - [ ] our pathways to Flatiron
@@ -235,6 +236,16 @@ ______
 
 
 <img src="pics/welcome-back.jpg" style="max-width:300px">
+
+**Day 2 Tasks:**
+- [ ] Welcome back and What to expect
+- [ ] Review Housekeeping
+    - Mute yourself, camera on
+    - Personal Empowerment Plan 
+        - read, google, peer, then instructors
+    - Ask questions in the zoom chat or in the slack channel
+        - When the instructor asks for questions, feel free to unmute yourself & ask aloud
+- [ ] Start learning 😃
 
 ## Review
 
